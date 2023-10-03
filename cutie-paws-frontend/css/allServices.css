@@ -1,0 +1,257 @@
+/* This is the file that styles the elements of the afterServices.html file. */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EBE3CC;
+	padding-bottom: 20px;
+}
+
+#navbar-container {
+	display: flex;
+	top: 28px;
+	right: 100px;
+	position: absolute;
+	width: 52vw;
+	justify-content: space-between;
+	z-index: 100;
+}
+
+#navbar ul {
+	display: flex;
+	list-style-type: none;
+	gap: 40px;
+
+}
+
+#navbar ul li {
+	position: relative;
+	font-style: normal;
+	color: #062D3E;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 38px;
+	letter-spacing: 1.44px;
+
+
+}
+
+#navbar ul li::after {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #062D3E;
+	transition: width 0.3s ease-in-out;
+}
+
+#navbar ul li:hover::after {
+	width: 100%;
+}
+
+#navbar ul li:hover {
+	cursor: pointer;
+}
+
+#services-page-title {
+	width: 354px;
+	height: 28px;
+	margin-top: 100px;
+	margin-left: 212px;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 38px;
+	letter-spacing: 0.96px;
+	color: #062D3E;
+}
+
+#all-services-page-background-decoration-1 {
+	position: absolute;
+	top: 76px;
+	left: -11.56px;
+}
+
+#services-container {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	margin-top: 100px;
+	place-content: center;
+	gap: 25px;
+}
+
+.services {
+	background-color: white;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	padding-bottom: 62px;
+	position: relative;
+}
+
+.services:hover {
+	background-color: #FBBD08;
+}
+
+.service-name {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 30px;
+	color: #062D3E;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.service-description {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #062D3E;
+	margin-bottom: 20px;
+
+}
+
+#all-services-page-background-decoration-2 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.service-cost {
+	border: 2px solid #224453;
+	border-radius: 190px;
+	height: 34px;
+	width: 100px;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.3s;
+	position: absolute;
+	bottom: 28px;
+}
+
+.service-cost:hover {
+	cursor: pointer;
+	box-shadow: rgba(31, 35, 65, 0.37) 0px 20px 30px -11px;
+	transform: translate(0px, -5px) scale(1.1);
+
+}
+
+.services:hover .service-cost {
+	background: #062D3E;
+	color: #EBE3CC;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.services:hover>* {
+	color: white;
+}
+
+#logout-button {
+	width: 140px;
+	height: 62px;
+	border-radius: 190px;
+	color: #062D3E;
+	border: 1px solid#062D3E;
+	text-align: center;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	letter-spacing: 1.44px;
+	background-color: inherit;
+	cursor: pointer;
+	margin-left: 40px;
+	margin-top: -10px;
+	transition: all 0.3s ease;
+}
+
+#logout-button:hover {
+	background-color: white;
+	border: 0px;
+}
+
+.service-image {
+	height: 40px;
+}
+
+#cart-counter {
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 10px;
+	cursor: default;
+	position: absolute;
+	background-color: #062D3E;
+	top: -5px;
+	right: -27px;
+	pointer-events: none;
+	border-color:10px solid red;
+	display: none;
+}
+
+#modal-container {
+
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	color: #062D3E;
+	width: 938px;
+	font-size: 20px;
+	background-color: rgba(251, 189, 8, 0.3);
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 33px;
+	margin-left: 208px;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	margin-bottom: -55px;
+
+
+}
+
+#modal-container-x {
+	cursor: default;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	position: absolute;
+	background-color: #062D3E;
+	margin-left: 818px;
+
+
+}
+
+#modal-container.active {
+	opacity: 1;
+	visibility: visible;
+}

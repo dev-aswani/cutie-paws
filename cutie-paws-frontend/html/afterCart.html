@@ -1,0 +1,52 @@
+<!-- This page is an intermediary between the cart and the chosen services, which is displayed for a
+few seconds, as items are added from cart to chosen services -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/afterCart.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet" />
+        <script src="../javascript/afterCart.js" defer></script>
+    </head>
+    <body>
+        <div id="after-cart-page">
+            <div id="navbar-container">
+                <nav id="navbar">
+                    <ul>
+                    <li id="link-1">
+                        <a href="allServices.html">Services We Offer</a>
+                    </li>
+                    <li id="link-2">
+                        <a href="chosenServices.html">Chosen Services</a>
+                    </li>
+                    <li id='link-3'>
+                        <a href="cart.html">Cart</a>
+                    </li>
+                </nav>
+                <a href="index.html"><button id="logout-button">Logout</button></a>
+            </div>
+            <img src="../images/backgroundDecoration3.png" id="after-cart-page-background-decoration-1" alt="background-decoration-1" />
+            <div id="after-cart-page-description">
+                <div id="loading-animation"></div>
+                <div id="after-cart-page-description-main">
+                    <p id="after-cart-page-description-main-header">
+                        Thank You for your purchase
+                    </p>
+                    <br>
+                    <p id="after-cart-page-description-main-content">
+                        All selected items have been added to your services. You will be shortly navigated to your chosen
+                        services
+                    </p>
+                </div>
+            </div>
+            <img src="../images/backgroundDecoration4.png" id="after-cart-page-background-decoration-2"
+                alt="background-decoration-2" />
+        </div>
+    </body>
+</html>

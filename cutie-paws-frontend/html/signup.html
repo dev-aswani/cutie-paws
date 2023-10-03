@@ -1,0 +1,48 @@
+<!-- This page allows a new user to register a new account with Cutie Paws. It validates the user's
+input , giving appropriate error messages for invalid entries. It allows the user the ability to login,
+if they have previously registered on the platform. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/signup.css">
+        <script type="text/javascript" src="../services/api.js" defer></script>
+        <script src="../javascript/signup.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+        
+    </head>
+    <body>
+        <div id="signup-page">
+            <a href="index.html"><img src="../images/logoDark.png" alt="logo-dark" id="signup-page-logo"></a>
+            <div id="signup-page-image-background"></div>
+            <img src="../images/backgroundDecoration2.png" alt="background-decoration-1" id="signup-page-background-decoration-1">
+            <img src="../images/cat.png" alt="cat" id="signup-page-icon">
+            <div id="signup-form-container">
+                <form action="#" method="POST">
+                    <p id="signup-form-header"> Sign Up</p>
+                    <label for="signup-email"></label>
+                    <p id="signup-email-header">Email</p>
+                    <input type="email" id="signup-email" name="email" placeholder="example@example.com" required autofocus >
+                    <span id="email-validation-msg" class="validation-msg"></span>
+                    <label for="signup-password"></label>
+                    <p id="signup-password-header">Password</p>
+                    <input type="password" id="signup-password" name="password" placeholder="********" >
+                    <span id="password-validation-msg" class="validation-msg"></span>
+                    <label for="signup-confirm-password"></label>
+                    <p id="signup-confirm-password-header">Confirm Password</p>
+                    <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="********"  required><br>
+                    <span id="confirm-password-validation-msg" class="validation-msg"></span>
+                    <button id="signup-page-signup-button" type="submit">Sign Up</button>
+                    <br>
+                    <a href="login.html"><span id="signup-account-exists">Already have an account? Login here</span></a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

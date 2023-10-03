@@ -1,0 +1,47 @@
+<!-- This page allows a registered user to login in to the website. It validates the user's credentials,
+giving appropriate error messages for invalid inputs, and non-existent accounts. It allows the
+user the ability to signup, to create a new account if they have not previously registered on the
+platform. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/login.css">
+        <script type="text/javascript" src="../services/api.js" defer></script>
+        <script src="../javascript/login.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+    </head>
+    <body>
+        <div id="login-page">
+            <a href="index.html"><img src="../images/logoLight.png" alt="logo-light" id="login-page-logo"></a>
+            <div id="login-page-image-background"></div>
+            <img src="../images/backgroundDecoration2.png" alt="background-decoration-1" id="login-page-background-decoration-1">
+            <img src="../images/cat2.png" alt="cat" id="login-page-icon">
+            <div id="login-form-container">
+                <form action="#" method="POST">
+                    <p id="login-form-header">Login</p>
+                    <label for="login-email"></label>
+                    <p id="login-email-header">Email</p>
+                    <input type="email" id="login-email" name="email"
+                        placeholder="example@example.com" required autofocus>
+                    <span id="email-validation-msg" class="validation-msg"></span>
+                    <label for="login-password"></label>
+                    <p id="login-password-header">Password</p>
+                    <input type="password" id="login-password" name="password" placeholder="********" 
+                        required>
+                    <span id="password-validation-msg" class="validation-msg"></span>
+                    <br>
+                    <button id="login-page-login-button" type="submit">Login</button>
+                    <br>
+                    <a href="signup.html"><span id="login-account-does-not-exist">Don't have an account? Sign up here</span></a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+/* This is the file that styles the elements of the chosenServices.html file. */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EBE3CC;
+	padding-bottom: 20px;
+}
+
+#navbar-container {
+	display: flex;
+	top: 28px;
+	right: 100px;
+	position: absolute;
+	width: 52vw;
+	justify-content: space-between;
+	z-index: 100;
+}
+
+#navbar ul {
+	display: flex;
+	list-style-type: none;
+	gap: 40px;
+
+}
+
+#navbar ul li {
+	position: relative;
+	font-style: normal;
+	color: #062D3E;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 38px;
+	letter-spacing: 1.44px;
+
+
+}
+
+#navbar ul li::after {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #062D3E;
+	transition: width 0.3s ease-in-out;
+}
+
+#navbar ul li:hover::after {
+	width: 100%;
+}
+
+#navbar ul li:hover {
+	cursor: pointer;
+}
+
+#chosen-services-page-title {
+	width: 354px;
+	height: 28px;
+	margin-top: 100px;
+	margin-left: 212px;
+	top: 1209px;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 46px;
+	line-height: 38px;
+	letter-spacing: 0.96px;
+	color: #062D3E;
+}
+
+#chosen-services-page-background-decoration-1 {
+	position: absolute;
+	top: 76px;
+	left: -11.56px;
+}
+
+#services-container {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	margin-top: 100px;
+	place-content: center;
+	gap: 25px;
+}
+
+.services {
+	background-color: white;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px;
+	position: relative;
+	padding-bottom: 62px;
+}
+
+.services:hover {
+	background-color: #FBBD08;
+}
+
+.service-name {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 30px;
+	color: #062D3E;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.service-description {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #062D3E;
+	margin-bottom: 10px;
+}
+
+#chosen-services-page-background-decoration-2 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.services:hover>* {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#logout-button {
+	width: 140px;
+	height: 62px;
+	border-radius: 190px;
+	color: #062D3E;
+	border: 1px solid#062D3E;
+	text-align: center;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	letter-spacing: 1.44px;
+	background-color: inherit;
+	cursor: pointer;
+	margin-left: 40px;
+	margin-top: -10px;
+	transition: all 0.3s ease;
+}
+
+#logout-button:hover {
+	background-color: white;
+	border: 0px;
+}
+
+.service-image {
+	height: 40px;
+}
+
+#cart-counter {
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 10px;
+	cursor: default;
+	position: absolute;
+	background-color: #062D3E;
+	top: -5px;
+	right: -27px;
+	pointer-events: none;
+	display: none;
+
+}
+
+.services.empty-services {
+	justify-content: center;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 300;
+	color: #062D3E;
+	font-size: 20px;
+	text-align: center;
+	width: 950px;
+}
+
+.services.empty-services:hover {
+	background-color: white;
+}
+
+.service-quantity {
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	font-size: 11px;
+	background-color: #ED5C01;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	align-self: flex-end;
+	position: absolute;
+	bottom: 28px;
+
+
+}

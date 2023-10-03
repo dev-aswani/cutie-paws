@@ -1,0 +1,152 @@
+/* This is the file that styles the elements of the login.html file. */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #EBE3CC;
+	overflow: hidden;
+}
+
+#login-page-image-background {
+	position: absolute;
+	width: 397px;
+	height: 805px;
+	left: 1043px;
+	top: 0px;
+	background: #062D3E;
+}
+
+#login-page-icon {
+	position: absolute;
+	width: 496px;
+	height: 710px;
+	left: 836px;
+	top: 50px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#login-page-logo {
+	width: 168px;
+	margin-left: 27px;
+	margin-top: 15px;
+	position: absolute;
+	z-index: 1000;
+}
+
+#login-page-background-decoration-1 {
+	position: absolute;
+	left: 1043px;
+	top: 60px;
+}
+
+#login-page-icon {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	object-fit: cover;
+	position: absolute;
+	height: 940px;
+	left: 785px;
+	top: -188px;
+}
+
+#login-form-container {
+	position: absolute;
+	top: 140px;
+	left: 120px;
+	background-color: white;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 100px 55px;
+
+}
+
+#login-email,
+#login-password {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #062D3E;
+	width: auto;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #062D3E;
+	width: 250px;
+	margin-bottom: 40px;
+}
+
+#login-form-header {
+	font-weight: 400;
+	color: #ED5C01;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-size: 66px;
+	line-height: 92px;
+	letter-spacing: -8px;
+	margin-bottom: 18px;
+}
+
+#login-email-header,
+#login-password-header {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	color: #062D3E;
+}
+
+#login-page-login-button {
+	text-align: center;
+	width: 156.03px;
+	height: 70px;
+	border: 0px;
+	background: #ED5C01;
+	border-radius: 247px;
+	font-family: 'Neue Montreal';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	letter-spacing: 1.44px;
+	transition-property: background-color, color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	color: white;
+}
+
+#login-page-login-button:hover {
+	cursor: pointer;
+	color: #ED5C01;
+	background-color: white;
+	border: 1px solid #ED5C01;
+}
+
+#login-account-does-not-exist {
+	display: inline-block;
+	margin-top: 10px;
+	color: #ED5C01;
+	text-decoration: underline;
+	font-weight: 300;
+	font-size: 15px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	cursor: pointer;
+}
+
+.validation-msg {
+	font-weight: 400;
+	color: red;
+	font-size: 12px;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+
+}
+
+input::placeholder {
+	opacity: 0.5;
+}

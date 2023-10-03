@@ -1,0 +1,46 @@
+<!-- All the services added to cart are displayed on this page, also giving the user the option to
+change quantity or remove items from cart. There is a display of the grand total and the option
+to buy. There is also a navigation bar which allows users to navigate between services offered,
+chosen services, and the cart. Additionally the user has the option to logout. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/cart.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet" />
+        <script type="text/javascript" src="../services/api.js"></script>
+        <script src="../javascript/cart.js" defer></script>
+    </head>
+    <body>
+        <div id="cart-page">
+            <div id="navbar-container">
+                <nav id="navbar">
+                    <ul>
+                    <li id="link-1">
+                        <a href="allServices.html">Services We Offer</a>
+                    </li>
+                    <li id="link-2">
+                        <a href="chosenServices.html">Chosen Services</a>
+                    </li>
+                    <li id='link-3'>
+                        <button id="cart-counter"></button>
+                        <a href="cart.html">
+                        Cart
+                        </a>
+                    </li>
+                </nav>
+                <a href="index.html"><button id="logout-button">Logout</button></a>
+            </div>
+            <img src="../images/backgroundDecoration3.png" id="cart-page-background-decoration-1" alt="background-decoration-1" />
+            <p id="cart-page-title">Cart</p>
+            <div id="cart-container"></div>
+            <img src="../images/backgroundDecoration4.png" id="cart-page-background-decoration-2" alt="background-decoration-2" />
+        </div>
+    </body>
+</html>

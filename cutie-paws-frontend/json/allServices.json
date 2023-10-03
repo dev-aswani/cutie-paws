@@ -1,0 +1,56 @@
+[
+    {
+        "imageLink": "../images/haircut.png",
+        "serviceName": "Haircut",
+        "description": "Isn't all that shedding getting annoying to clean up after? Send your pets in for a fashionable haircut! Our stylists are up to date on the latest trends and will help get your pet trimmed.",
+        "cost": "AED 175"
+    },
+    {
+        "imageLink": "../images/bathing.png",
+        "serviceName": "Bathing",
+        "description": "Do your pets tend to get a little dirty when playing around? Bring them in for a refreshing wash! Your pets will be relaxed, smell fresh and be squeaky clean like you've never seen before.",
+        "cost": "AED 350"
+    },
+    {
+        "imageLink": "../images/styling.png",
+        "serviceName": "Blow Dry & Style",
+        "description": "Ever need your pets to look in tip-top shape for an important event? Look no further, for we have professional stylists who can get your pets all primmed and perfect for the special occasion.",
+        "cost": "AED 250"
+    },
+    {
+        "imageLink": "../images/brushing.png",
+        "serviceName": "Brushing",
+        "description": "Regular brushing is a hassle for the average person, especially when you're busy. Bring your pets in for a good brushing by our staff. We will get all the uncomfy knots and matting out.",
+        "cost": "AED 100"
+    },
+    {
+        "imageLink": "../images/spa.png",
+        "serviceName": "Spa",
+        "description": "Pamper your pet with our Royal Spas! It'll leave them feeling calm and soothed, with many skin and fur benefits. Our Salt Baths and Ayurvedic treatments will get them relaxed in no time.",
+        "cost": "AED 500"
+    },
+    {
+        "imageLink": "../images/photography.png",
+        "serviceName": "Photography",
+        "description": "Capture you and your pet's favorite moments with our amazing photographs that highlights their individuality, additionally we're able to provide digital and framed photos for your pets.",
+        "cost": "AED 400"
+    },
+    {
+        "imageLink": "../images/dayCare.png",
+        "serviceName": "Day Care",
+        "description": "Our fun-filled playing activities and supervised day care will make your pet's day more enjoyable. We also provide trainers and food in order to keep your pets happy throughout the day.",
+        "cost": "AED 1000"
+    },
+    {
+        "imageLink": "../images/training.png",
+        "serviceName": "Training",
+        "description": "Discover your pet's full potential with skilled training that fosters obedience and strengthens your bond. Our highly skilled trainers have plenty of experience to guide you and your pet.",
+        "cost": "AED 450"
+    },
+    {
+        "imageLink": "../images/eventAccessories.png",
+        "serviceName": "Event Accessories",
+        "description": "With our fashionable accessories, you may groom your pet in a variety of styles for special occasions, from summer to winter, we can be sure your pet will fit the part no matter the season.",
+        "cost": "AED 275"
+    }
+]

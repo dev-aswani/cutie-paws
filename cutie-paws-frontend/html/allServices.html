@@ -1,0 +1,52 @@
+<!-- All the services offered are displayed on this page, also giving the user the option to add any
+service to cart as many times as required. There is also a navigation bar which allows users to
+navigate between services offered, chosen services, and the cart. Additionally the user has the
+option to logout -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/allServices.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../services/api.js"></script>
+        <script src="../javascript/allServices.js" defer></script>
+
+    </head>
+    <body>
+        <div id="all-services-page">
+            <div id="navbar-container">
+                <nav id="navbar">
+                    <ul>
+                    <li id="link1">
+                        <a href="allServices.html">Services We Offer</a>
+                    </li>
+                    <li id="link2">
+                        <a href="chosenServices.html">Chosen Services</a>
+                    </li>
+                    <li id='link3'>
+                        <button id="cart-counter"></button>
+                        <a href="cart.html">
+                        Cart
+                        </a>
+                    </li>
+                </nav>
+                <a href="index.html"><button id="logout-button">Logout</button></a>
+            </div>
+            <img src="../images/backgroundDecoration3.png" id="all-services-page-background-decoration-1" alt="background-decoration-1" />
+            <p id="services-page-title">Services We Offer</p>
+            <div id="modal-container">
+                <p id="modal-container-text">
+                    Service added successfully to cart
+                </p>
+                <button id="modal-container-x">x</button>
+            </div>
+            <div id="services-container"></div>
+            <img src="../images/backgroundDecoration4.png" id="all-services-page-background-decoration-2" alt="background-decoration-2" />
+        </div>
+    </body>
+</html>
